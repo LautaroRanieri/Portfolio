@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: salmon;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#btn-atras {
+    background-color: #4CAF50;
+    /* Color de fondo del botón */
+    border: none;
+    /* Elimina el borde */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Añade un poco de espacio alrededor del texto */
+    text-align: center;
+    /* Centra el texto */
+    text-decoration: none;
+    /* Elimina la subrayado */
+    display: inline-block;
+    /* Permite que el botón se muestre en línea con otros elementos */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Añade un poco de espacio entre el botón y otros elementos */
+    cursor: pointer;
+    /* Cambia el cursor del mouse cuando pasa sobre el botón */
+    position: relative;
+    /* Agrega posicionamiento relativo para el pseudo-elemento */
+}
+
+#btn-atras::before {
+    content: "";
+    /* Agrega contenido vacío */
+    position: absolute;
+    /* Agrega posicionamiento absoluto */
+    top: 50%;
+    /* Alinea en el medio verticalmente */
+    left: -20px;
+    /* Desplaza el pseudo-elemento a la izquierda */
+    border: solid white;
+    /* Crea una flecha con bordes sólidos */
+    border-width: 0 3px 3px 0;
+    /* Define el tamaño y forma de la flecha */
+    display: inline-block;
+    /* Permite que el pseudo-elemento se muestre en línea con otros elementos */
+    padding: 3px;
+    /* Añade un poco de espacio alrededor de la flecha */
+    transform: translateY(-50%) rotate(135deg);
+    /* Rota la flecha 135 grados y la desplaza a la izquierda */
+}
